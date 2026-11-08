@@ -1,0 +1,360 @@
+/* ========== HEADER ========== */
+.page-header {
+  text-align: center; 
+  padding: 60px 20px;
+  background: linear-gradient(120deg, #f4f0ff, #fffafa 75%);
+}
+.page-header h1 { 
+  font-family: "Playfair Display", serif; 
+  font-size: clamp(32px, 5vw, 48px); 
+  margin-bottom: 10px; 
+}
+.page-header span { 
+  color: var(--pink); 
+}
+.page-header p { 
+  color: var(--muted); 
+  max-width: 600px; 
+  margin: 0 auto; 
+  font-size: 16px; 
+}
+
+/* ========== MAIN CONTAINER ========== */
+.main-container { 
+  max-width: 1100px;
+  margin: 0 auto; 
+  padding: 40px 20px 80px; 
+}
+
+/* Section Titles */
+.section-heading { 
+  text-align: center; 
+  margin-bottom: 40px; 
+}
+.section-heading h2 { 
+  font-family: "Playfair Display", serif; 
+  font-size: 32px; 
+  color: var(--dark); 
+  margin-bottom: 8px; 
+}
+.section-heading p { 
+  color: var(--muted); 
+  font-size: 15px; 
+}
+
+/* ========== 1. SKIN TONE SECTION ========== */
+.skin-tone-section { 
+  margin-bottom: 70px; 
+}
+.skincare-grid { 
+  display: grid; 
+  grid-template-columns: 1fr 1fr; 
+  gap: 30px; align-items: center; 
+  margin-bottom: 40px; 
+}
+.skincare-image img { 
+  width: 100%; 
+  border-radius: 24px; 
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08); 
+  border: 5px solid white; 
+}
+.skincare-text { 
+  background: white; 
+  padding: 35px; 
+  border-radius: 24px; 
+  box-shadow: 0 10px 30px rgba(0,0,0,0.03); 
+  width: 100%; 
+  height: 70%; 
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; }
+.skincare-text h3 { 
+  font-family: "Playfair Display", serif; 
+  font-size: 22px; 
+  color: var(--dark-pink); 
+  margin-bottom: 15px; 
+}
+.undertone-box { 
+  background: var(--lavender-light); 
+  padding: 20px; border-radius: 12px; 
+  margin-bottom: 15px; 
+}
+.undertone-box strong { 
+  color: #7a5fa6; 
+  display: block; 
+  margin-bottom: 5px; 
+}
+
+/* ========== 2. BLUSH & EYESHADOW ========== */
+.basics-section { 
+  margin-top: 30px; 
+  margin-bottom: 70px; 
+}
+.tabs-nav { 
+  display: flex; 
+  justify-content: center; 
+  gap: 15px; 
+  margin-bottom: 30px; 
+}
+.tab-btn { 
+  background: white; 
+  border: 2px solid #e8e3f5;
+  padding: 10px 24px; 
+  border-radius: 30px; 
+  font-weight: 600; 
+  font-size: 15px; 
+  color: var(--muted); 
+  transition: 0.3s; 
+}
+.tab-btn.active { 
+  background: var(--pink); 
+  border-color: var(--pink); 
+  color: white; 
+  box-shadow: 0 4px 15px rgba(217, 111, 150, 0.3); 
+}
+
+.tab-content { 
+  display: none; 
+  background: white; 
+  border-radius: 24px; 
+  padding: 40px; 
+  box-shadow: 0 10px 30px rgba(0,0,0,0.03); 
+  animation: fadeIn 0.4s ease; 
+}
+.tab-content.active {
+  display: block; 
+}
+
+.basic-layout { 
+  display: grid; 
+  grid-template-columns: 1fr 1fr; 
+  gap: 40px; 
+  align-items: center; 
+}
+.basic-layout img { 
+  width: 100%; 
+  border-radius: 20px; 
+  border: 4px solid #fff1e8; 
+}
+
+.basic-steps h4 { 
+  font-size: 18px; 
+  color: var(--dark); 
+  margin-bottom: 10px; 
+  display: flex; 
+  align-items: center; 
+  gap: 8px; 
+}
+.basic-steps p { 
+  font-size: 14px; 
+  color: var(--muted); 
+  margin-bottom: 20px; 
+}
+.basic-steps ul { 
+  padding-left: 20px; 
+  font-size: 14px; 
+  color: var(--muted); 
+}
+.basic-steps li { 
+  margin-bottom: 8px; 
+}
+
+/* ========== 3. GRID & IMAGE CARDS (Shared by Colors & Routine) ========== */
+.routine-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 80px;
+}
+
+/* Base card style */
+.routine-card {
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.05);
+  border: 1px solid #f0e6ea;
+  transition: transform 0.3s;
+  width: 100%;
+}
+
+.routine-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+}
+
+/* Cards with images */
+.image-card {
+  padding: 0 !important;
+  overflow: hidden;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.image-card img {
+  width: 330px;
+  height: 518px;
+  object-fit: cover;
+  border-bottom: 4px solid var(--pink);
+  display: block;
+}
+
+.image-card .card-content {
+  padding: 20px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* The number circle */
+.image-card .routine-number {
+  background: var(--pink);
+  color: white;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-weight: bold;
+  margin: 0 auto 15px; 
+  font-size: 15px;
+  box-shadow: 0 4px 10px rgba(217, 111, 150, 0.3);
+}
+
+.image-card h4 {
+  font-family: "Playfair Display", serif;
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: var(--dark);
+}
+
+.image-card p {
+  font-size: 14px;
+  color: var(--muted);
+  margin: 0;
+}
+
+/* ========== 4. TYPES OF MAKEUP ========== */
+.types-section { 
+  margin-bottom: 40px;
+ }
+.types-grid { 
+  display: grid; 
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+  gap: 30px; 
+}
+
+.type-card { 
+  background: white; 
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05); 
+  transition: transform 0.3s; 
+  border: 1px solid #fcf5f7; 
+  display: flex; 
+  flex-direction: column;
+}
+.type-card:hover { 
+  transform: translateY(-8px); 
+  box-shadow: 0 15px 35px rgba(0,0,0,0.08); 
+}
+.type-image { 
+  width: 296px; 
+  height: 450px; 
+  object-fit: cover; 
+  display: block; 
+  border-bottom: 4px solid var(--pink); 
+}
+.type-content { 
+  padding: 25px; 
+  flex-grow: 1; 
+}
+.type-content h3 { 
+  font-family: "Playfair Display", serif;
+  font-size: 22px; 
+  margin-bottom: 10px; 
+  color: var(--dark); 
+}
+.type-content p { 
+  font-size: 14px; 
+  color: var(--muted); 
+}
+
+/* ... Keep all your existing CSS ... */
+/* ========== MODAL POP-UP FOR STEPS (IMAGE ONLY) ========== */
+.clickable-card {
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: 0.3s;
+}
+
+.clickable-card:hover {
+  border: 2px solid var(--pink);
+  background: #fffcfd;
+  transform: translateY(-5px);
+}
+
+.modal-overlay {
+  display: none;
+  position: fixed;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background: rgba(68, 49, 61, 0.8);
+  backdrop-filter: blur(5px);
+  z-index: 1000;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.modal-overlay.active {
+  display: flex;
+  animation: fadeIn 0.3s ease;
+}
+
+/* Make the box fit the image perfectly */
+.modal-image-only {
+  background: transparent;
+  width: auto;
+  max-width: 90vw;
+  max-height: 90vh;
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.3);
+  animation: slideUp 0.4s ease;
+}
+
+.modal-img-full {
+  max-width: 100%;
+  max-height: 85vh;
+  display: block;
+  object-fit: contain;
+  border-radius: 20px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 15px; right: 15px;
+  background: white;
+  color: var(--dark);
+  border: none;
+  width: 40px; height: 40px;
+  border-radius: 50%;
+  font-size: 18px;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  z-index: 10;
+  transition: 0.2s;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.close-btn:hover {
+  background: var(--pink);
+  color: white;
+  transform: scale(1.1);
+}
+
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+@keyframes slideUp { from { transform: translateY(30px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }

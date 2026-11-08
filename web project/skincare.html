@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GlowUp | Skincare & Self-Care 🌿</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&family=Dancing+Script:wght@600;700&display=swap" rel="stylesheet">
+  
+  <!-- CSS Links -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="skincare.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <a href="index.html" class="logo">🌸 GlowUp ✨</a>
+    <a href="acceuil.html" class="back-link">← Back to Dashboard</a>
+  </header>
+
+  <!-- HEADER -->
+  <div class="page-header" style="background: linear-gradient(120deg, #edf8f1, #fffafa 75%);">
+    <h1>Skincare & <span>Self-Care</span> 🌿</h1>
+    <p>Discover simple skincare routines, glass-skin basics, and relaxing self-care habits to glow from the inside out. 🧴✨</p>
+  </div>
+
+  <div class="main-container">
+
+    <!-- 1. FIND YOUR SKIN TYPE -->
+    <section class="skin-tone-section">
+      <div class="section-heading">
+        <h2>1. How to find your Skin Type 💧</h2>
+        <p>Before buying products, you need to know what your skin needs.</p>
+      </div>
+
+      <div class="skincare-grid">
+        <div class="skincare-image">
+          <img src="https://i.pinimg.com/736x/f4/d9/50/f4d950b3d64572df2695ae6bdf336636.jpg" alt="Skin types">
+        </div>
+        <div class="skincare-text">
+          <h3>The Bare-Face Test 🧼</h3>
+          <p style="font-size:14px; color:var(--muted); margin-bottom:15px;">Wash your face, pat it dry, and do not apply any products. Wait 30 minutes and check how it feels:</p>
+          
+          <div class="undertone-box" style="background:#f1f8e9; padding: 12px; margin-bottom: 10px;">
+            <strong>🌿 Normal</strong>
+            <p style="font-size:13px; margin:0; color:#33691e;">Feels comfortable, balanced, and neither too oily nor too dry. Minimal breakouts. You're lucky!</p>
+          </div>
+
+          <div class="undertone-box" style="background:#e0f7fa; padding: 12px; margin-bottom: 10px;">
+            <strong>💧 Oily</strong>
+            <p style="font-size:13px; margin:0; color:#006064;">Shiny all over, especially on the forehead and nose. Needs lightweight, gel-based products.</p>
+          </div>
+
+          <div class="undertone-box" style="background:#fff3e0; padding: 12px; margin-bottom: 10px;">
+            <strong>🏜️ Dry</strong>
+            <p style="font-size:13px; margin:0; color:#e65100;">Feels tight, flaky, or rough. Needs rich, hydrating creams and gentle cleansers.</p>
+          </div>
+
+          <div class="undertone-box" style="background:#f3e5f5; padding: 12px; margin-bottom: 10px;">
+            <strong>🌗 Combination</strong>
+            <p style="font-size:13px; margin:0; color:#6a1b9a;">Oily T-zone (forehead/nose) but normal or dry cheeks. Needs a mix of products.</p>
+          </div>
+
+          <div class="undertone-box" style="background:#fce4ec; padding: 12px; margin-bottom: 0;">
+            <strong>🌸 Sensitive</strong>
+            <p style="font-size:13px; margin:0; color:#c2185b;">Gets red, itchy, or irritated easily. Needs fragrance-free and soothing products.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. THE ULTIMATE ROUTINE -->
+    <section class="basics-section">
+      <div class="section-heading">
+        <h2>2. The Ultimate Skincare Routine 🧴</h2>
+        <p>The correct order to apply your products for the best results.</p>
+      </div>
+
+      <!-- TABS NAV -->
+      <div class="tabs-nav">
+        <button id="btnMorning" class="tab-btn active" onclick="openSkincareTab('morning', this)">☀️ Morning Routine</button>
+        <button id="btnNight" class="tab-btn" onclick="openSkincareTab('night', this)">🌙 Night Routine</button>
+      </div>
+
+      <!-- MORNING TAB -->
+      <div id="morning" class="tab-content active">
+        <div class="routine-list">
+          <div class="routine-step">
+            <div class="step-num">1</div>
+            <div class="step-info">
+              <h4>Cleanser</h4>
+              <p>Wash away the impurities from sleep. Use a gentle cleanser.</p>
+            </div>
+          </div>
+          <div class="routine-step">
+            <div class="step-num">2</div>
+            <div class="step-info">
+              <h4>Vitamin C Serum</h4>
+              <p>Protects your skin from the sun and brightens your complexion.</p>
+            </div>
+          </div>
+          <div class="routine-step">
+            <div class="step-num">3</div>
+            <div class="step-info">
+              <h4>Moisturizer</h4>
+              <p>Locks in hydration and keeps your skin barrier healthy.</p>
+            </div>
+          </div>
+          <div class="routine-step" style="border-left-color: #ffb300;">
+            <div class="step-num" style="background: #ffb300;">4</div>
+            <div class="step-info">
+              <h4>Sunscreen (SPF 30+)</h4>
+              <p><strong>Never skip this!</strong> Protects against premature aging and dark spots.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- NIGHT TAB -->
+      <div id="night" class="tab-content">
+        <div class="routine-list">
+          <div class="routine-step">
+            <div class="step-num">1</div>
+            <div class="step-info">
+              <h4>Cleansing Balm / Oil</h4>
+              <p>Melts away makeup and sunscreen from the day.</p>
+            </div>
+          </div>
+          <div class="routine-step">
+            <div class="step-num">2</div>
+            <div class="step-info">
+              <h4>Water-Based Cleanser</h4>
+              <p>Double cleansing ensures your pores are completely clean.</p>
+            </div>
+          </div>
+          <div class="routine-step">
+            <div class="step-num">3</div>
+            <div class="step-info">
+              <h4>Exfoliator (1-2x a week)</h4>
+              <p>Removes dead skin cells. Don't do this every night!</p>
+            </div>
+          </div>
+          <div class="routine-step">
+            <div class="step-num">4</div>
+            <div class="step-info">
+              <h4>Night Cream / Retinol</h4>
+              <p>Repairs the skin while you sleep. Use a thicker moisturizer.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. GLASS SKIN GUIDE (CLICKABLE) -->
+    <section class="basics-section">
+      <div class="section-heading">
+        <h2>3. The "Glass Skin" Guide ✨</h2>
+        <p>Click on any picture to see the full image!</p>
+      </div>
+
+      <div class="routine-grid">
+        <!-- Step 1 -->
+        <div class="routine-card image-card clickable-card" onclick="openImageModal('https://i.pinimg.com/736x/e0/81/a5/e081a5c74702a61f9620b0cc5bc6ef5c.jpg')">
+          <img src="https://i.pinimg.com/736x/e0/81/a5/e081a5c74702a61f9620b0cc5bc6ef5c.jpg" alt="Double Cleanse">
+          <div class="card-content">
+            <div class="routine-number">1</div>
+            <h4>Double Cleanse</h4>
+            <p>Use an oil cleanser followed by a water-based one to ensure zero impurities are left.</p>
+          </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="routine-card image-card clickable-card" onclick="openImageModal('https://i.pinimg.com/736x/22/88/3f/22883f5d4c04fd74924d0ec0329d8052.jpg')">
+          <img src="https://i.pinimg.com/736x/22/88/3f/22883f5d4c04fd74924d0ec0329d8052.jpg" alt="Toner">
+          <div class="card-content">
+            <div class="routine-number">2</div>
+            <h4>Hydrating Toner</h4>
+            <p>Apply a hydrating toner (or essence) while your skin is still slightly damp to lock in moisture.</p>
+          </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="routine-card image-card clickable-card" onclick="openImageModal('https://i.pinimg.com/736x/31/84/a6/3184a686bea5249e48fe3adb9558b107.jpg')">
+          <img src="https://i.pinimg.com/736x/31/84/a6/3184a686bea5249e48fe3adb9558b107.jpg" alt="Hyaluronic Acid">
+          <div class="card-content">
+            <div class="routine-number">3</div>
+            <h4>Hyaluronic Acid</h4>
+            <p>This is the secret to glass skin! It holds 1000x its weight in water. Apply it to damp skin.</p>
+          </div>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="routine-card image-card clickable-card" onclick="openImageModal('https://i.pinimg.com/736x/cf/d1/49/cfd14986b09f444e70c61732d01604eb.jpg')">
+          <img src="https://i.pinimg.com/736x/cf/d1/49/cfd14986b09f444e70c61732d01604eb.jpg" alt="Face Oil">
+          <div class="card-content">
+            <div class="routine-number">4</div>
+            <h4>Face Oil</h4>
+            <p>Press a few drops of facial oil into your skin to seal in all the hydration and give a glossy finish.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. SELF-CARE HABITS -->
+    <section class="types-section">
+      <div class="section-heading">
+        <h2>4. Relaxing Self-Care Habits 🛁</h2>
+        <p>Skincare is more than just products. It's about taking time for yourself.</p>
+      </div>
+      <div class="types-grid">
+        <!-- Habit 1 -->
+        <div class="type-card">
+          <img class="type-image" src="https://i.pinimg.com/1200x/f7/4c/0e/f74c0e7581e45b34ced5d7eb69093752.jpg" alt="Bath time">
+          <div class="type-content">
+            <h3>🛁 Unplug & Soak</h3>
+            <p>Take a warm bath with Epsom salts or a bath bomb. Leave your phone in the other room and just relax.</p>
+          </div>
+        </div>
+
+        <!-- Habit 2 -->
+        <div class="type-card">
+          <img class="type-image" src="https://i.pinimg.com/736x/e0/27/1f/e0271fc1c7e22fc36b102e1efa068c3c.jpg" alt="Drinking water">
+          <div class="type-content">
+            <h3>💧 Hydrate from Within</h3>
+            <p>Drink a big glass of water. Hydration starts from the inside out—no cream can replace drinking water!</p>
+          </div>
+        </div>
+
+        <!-- Habit 3 -->
+        <div class="type-card">
+          <img class="type-image" src="https://i.pinimg.com/1200x/e0/73/b1/e073b125b28433775671535b77d6d60d.jpg" alt="Stretching">
+          <div class="type-content">
+            <h3>🧘‍♀️ Gentle Movement</h3>
+            <p>Do 10 minutes of gentle stretching or yoga before bed to release tension and help you sleep better.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div> <!-- End of main-container -->
+
+  <!-- MODAL FOR FULL IMAGE -->
+  <div id="imageModal" class="modal-overlay" onclick="closeImageModal()">
+    <div class="modal-content" onclick="event.stopPropagation()">
+      <button class="close-btn" onclick="closeImageModal()">✖</button>
+      <img id="fullImage" src="" alt="Full size image" class="modal-img-full">
+    </div>
+  </div>
+
+  <!-- JS Link -->
+  <script src="skincare.js"></script>
+</body>
+</html>

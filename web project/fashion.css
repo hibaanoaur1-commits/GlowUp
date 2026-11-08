@@ -1,0 +1,214 @@
+/* ========== HEADER ========== */
+.page-header {
+  text-align: center; padding: 60px 20px;
+  background: linear-gradient(120deg, #fff1e8, #fffafa 75%);
+}
+.page-header h1 { font-family: "Playfair Display", serif; font-size: clamp(32px, 5vw, 48px); margin-bottom: 10px; }
+.page-header span { color: var(--pink); }
+.page-header p { color: var(--muted); max-width: 600px; margin: 0 auto; font-size: 16px; }
+
+/* ========== MAIN CONTAINER ========== */
+.main-container { max-width: 1100px; margin: 0 auto; padding: 40px 20px 80px; }
+
+/* Section Titles */
+.section-heading { text-align: center; margin-bottom: 40px; }
+.section-heading h2 { font-family: "Playfair Display", serif; font-size: 32px; color: var(--dark); margin-bottom: 8px; }
+.section-heading p { color: var(--muted); font-size: 15px; }
+
+/* ========== 1. BODY SHAPE SECTION ========== */
+.skin-tone-section { margin-bottom: 70px; }
+.skincare-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; align-items: center; margin-bottom: 40px; }
+.skincare-image img { width: 100%; border-radius: 24px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); border: 5px solid white; }
+.skincare-text { background: white; padding: 35px; border-radius: 24px; box-shadow: 0 10px 30px rgba(0,0,0,0.03); width: 100%; height: 100%; display: flex; flex-direction: column; justify-content: center; }
+.skincare-text h3 { font-family: "Playfair Display", serif; font-size: 22px; color: var(--dark-pink); margin-bottom: 15px; }
+.undertone-box { background: var(--lavender-light); padding: 20px; border-radius: 12px; margin-bottom: 15px; }
+.undertone-box strong { color: #7a5fa6; display: block; margin-bottom: 5px; }
+
+/* ========== 2 & 3. CARDS ========== */
+.basics-section { margin-top: 30px; margin-bottom: 70px; }
+.routine-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.routine-card {
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.05);
+  border: 1px solid #f0e6ea;
+  transition: transform 0.3s;
+  width: 100%;
+}
+
+.routine-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+}
+
+/* ========== CLOTHING GRID FOR BODY SHAPES ========== */
+.clothing-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  padding: 15px;
+  background: white;
+}
+
+.clothing-item {
+  background: #fafafa;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #f0e6ea;
+  transition: 0.3s;
+}
+
+.clothing-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+.clothing-item img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-bottom: 2px solid #f0e6ea;
+  display: block;
+  transition: filter 0.2s;
+}
+
+.clothing-item img:hover {
+  filter: brightness(0.9);
+}
+
+.clothing-info {
+  padding: 10px;
+  text-align: center;
+}
+
+.clothing-info strong {
+  display: block;
+  font-size: 13px;
+  color: var(--dark);
+  margin-bottom: 3px;
+}
+
+.clothing-info span {
+  display: block;
+  font-size: 11px;
+  color: var(--muted);
+  line-height: 1.2;
+}
+
+/* ========== 4. TYPES OF AESTHETICS ========== */
+.types-section { 
+  margin-bottom: 40px; 
+}
+.types-grid { 
+  display: grid; 
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+  gap: 30px; }
+
+.type-card { 
+  background: white; 
+  border-radius: 24px; 
+  overflow: hidden; 
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05); 
+  transition: transform 0.3s; 
+  border: 1px solid #fcf5f7; 
+  display: flex; 
+  flex-direction: column; 
+}
+.type-card:hover { 
+  transform: translateY(-8px); 
+  box-shadow: 0 15px 35px rgba(0,0,0,0.08); }
+.type-image { 
+  width: 340px; 
+  height: 604px; 
+  object-fit: cover; 
+  display: block; 
+  border-bottom: 4px solid var(--pink); 
+}
+.type-content { 
+  padding: 25px; 
+  flex-grow: 1; 
+}
+.type-content h3 { 
+  font-family: "Playfair Display", serif; 
+  font-size: 22px; margin-bottom: 10px; 
+  color: var(--dark); 
+}
+.type-content p { 
+  font-size: 14px; 
+  color: var(--muted); 
+}
+
+/* ========== IMAGE MODAL POP-UP ========== */
+.modal-overlay {
+  display: none;
+  position: fixed;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background: rgba(30, 20, 25, 0.85);
+  backdrop-filter: blur(5px);
+  z-index: 1000;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.modal-overlay.active {
+  display: flex;
+  animation: fadeIn 0.3s ease;
+}
+
+.modal-content {
+  background: transparent;
+  position: relative;
+  max-width: 90vw;
+  max-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-img-full {
+  max-width: 100%;
+  max-height: 85vh;
+  object-fit: contain;
+  border-radius: 16px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+  animation: slideUp 0.4s ease;
+}
+
+.close-btn {
+  position: absolute;
+  top: -40px; right: -10px;
+  background: white;
+  color: var(--dark);
+  border: none;
+  width: 40px; height: 40px;
+  border-radius: 50%;
+  font-size: 18px;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  z-index: 10;
+  transition: 0.2s;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.close-btn:hover {
+  background: var(--pink);
+  color: white;
+  transform: scale(1.1);
+}
+
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+@keyframes slideUp { from { transform: translateY(30px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 850px) {
+  .skincare-grid { grid-template-columns: 1fr; gap: 20px; }
+  .skincare-image { order: -1; }
+}

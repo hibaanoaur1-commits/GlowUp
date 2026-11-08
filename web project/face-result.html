@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Haircut Guide | GlowUp ✨</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&family=Sacramento&display=swap" rel="stylesheet">
+    <!-- External Stylesheets -->
+    <link rel="stylesheet" href="acceuil.css">
+    <link rel="stylesheet" href="face-result.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header class="navbar">
+        <a href="acceuil.html" class="logo">🌸 GlowUp ✨</a>
+        <nav>
+            <a href="acceuil.html">Home 🏠</a>
+            <a href="face-guide.html">Face Shape Guide ✂️</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="result-container">
+            <a href="face-guide.html" class="back-link">← Back to Face Shape Selection</a>
+            
+            <p class="eyebrow">✨ YOUR PERSONALIZED RESULTS ✨</p>
+
+            <!-- OVAL FACE SECTION -->
+            <div class="shape-result-section" data-shape="oval">
+                <h2 class="result-title">Oval Face Shape 🥚✨</h2>
+                <p class="result-desc">Your face is beautifully balanced! Your forehead is slightly wider than your rounded jaw, and your face length is greater than its width. You can pull off almost any hairstyle effortlessly!</p>
+                <h3>🎀 Recommended Haircuts For You:</h3>
+                <div class="hairstyle-grid">
+                    <div class="style-card">
+                        <img src="pic1 ov.png" alt="Oval hairstyle 1">
+                    </div>
+                    <div class="style-card">
+                        <img src="pic.png" alt="Oval hairstyle 2">
+                    </div>
+                </div>
+            </div>
+
+            <!-- ROUND FACE SECTION -->
+            <div class="shape-result-section" data-shape="round">
+                <h2 class="result-title">Round Face Shape ⚪✨</h2>
+                <p class="result-desc">Your face features soft curves with equal width and length. The best hairstyles for you add height on top or create long, vertical lines to slim and elongate your face shape gracefully.</p>
+                <h3>🎀 Recommended Haircuts For You:</h3>
+                <div class="hairstyle-grid">
+                    <div class="style-card">
+                        <img src="PIC ROUN.png" alt="Round hairstyle 1">
+                    </div>
+                    <div class="style-card">
+                        <img src="pic4 round.png" alt="Round hairstyle 2">
+                    </div>
+                </div>
+            </div>
+
+            <!-- SQUARE FACE SECTION -->
+            <div class="shape-result-section" data-shape="square">
+                <h2 class="result-title">Square Face Shape ⬛✨</h2>
+                <p class="result-desc">You have a gorgeous, strong jawline and a forehead of equal width. Soft waves, textured ends, and side parts help soften your angles and add beautiful movement.</p>
+                <h3>🎀 Recommended Haircuts For You:</h3>
+                <div class="hairstyle-grid">
+                    <div class="style-card">
+                        <img src="pic5 squ.png" alt="Square hairstyle 1">
+                    </div>
+                    <div class="style-card">
+                        <img src="pic squa.png" alt="Square hairstyle 2">
+                    </div>
+                </div>
+            </div>
+
+            <!-- HEART FACE SECTION -->
+            <div class="shape-result-section" data-shape="heart">
+                <h2 class="result-title">Heart Face Shape 🤍✨</h2>
+                <p class="result-desc">You have a wider forehead and cheekbones with a delicate, pointed chin. Chin-length bobs, side-swept bangs, and shoulder-length waves look breathtaking on you!</p>
+                <h3>🎀 Recommended Haircuts For You:</h3>
+                <div class="hairstyle-grid">
+                    <div class="style-card">
+                        <img src="pic7 .png" alt="Heart hairstyle 1">
+                    </div>
+                    <div class="style-card">
+                        <img src="https://i.pinimg.com/736x/72/b6/9a/72b69ab5fc340d2baf4609d7d80ee154.jpg" alt="Heart hairstyle 2">
+                    </div>
+                </div>
+            </div>
+
+            <!-- DIAMOND FACE SECTION -->
+            <div class="shape-result-section" data-shape="diamond">
+                <h2 class="result-title">Diamond Face Shape 💎✨</h2>
+                <p class="result-desc">Your cheekbones are the widest part of your face, with a narrow forehead and jawline. Styles that add width at the chin and forehead or soft bangs complement your striking features.</p>
+                <h3>🎀 Recommended Haircuts For You:</h3>
+                <div class="hairstyle-grid">
+                    <div class="style-card">
+                        <img src="pic9.png" alt="Diamond hairstyle 1">
+                    </div>
+                    <div class="style-card">
+                        <img src="pic rr.png" alt="Diamond hairstyle 2">
+                    </div>
+                </div>
+            </div>
+
+            <!-- FALLBACK MESSAGE -->
+            <div id="noSelectionMsg" style="display: none;">
+                <h2>Oops! Please select your face shape from the guide page first. 🌸</h2>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- External JavaScript -->
+    <script src="face-guide.js" defer></script>
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close">✕</button>
+    <img id="lightboxImg" src="" alt="">
+</div>
+</body>
+</html>

@@ -1,0 +1,59 @@
+/* ========== GLOBAL BASE STYLES ========== */
+:root {
+  --pink: #d96f96;
+  --dark-pink: #b94e78;
+  --dark: #44313d;
+  --muted: #81727b;
+  --background: #fffafa;
+  --white: #ffffff;
+  --lavender-light: #f4f0ff;
+}
+* { 
+  margin: 0; 
+  padding: 0;
+  box-sizing: border-box; 
+}
+body {
+  font-family: "DM Sans", sans-serif;
+  background: var(--background);
+  color: var(--dark);
+  line-height: 1.7;
+}
+
+a { 
+  text-decoration: none; 
+  color: inherit;
+}
+button { 
+  font-family: inherit; 
+  cursor: pointer; 
+}
+
+/* ========== NAVBAR ========== */
+.navbar {
+  display: flex; 
+  align-items: center; 
+  justify-content: space-between;
+  padding: 18px 8%; 
+  background: rgba(255, 255, 255, 0.96);
+  position: sticky; 
+  top: 0; 
+  z-index: 100; 
+  box-shadow: 0 3px 20px #5537470b;
+}
+.logo { 
+  color: var(--pink); 
+  font-family: "Dancing Script", cursive; 
+  font-size: 34px; 
+  font-weight: 700; 
+}
+.back-link { 
+  font-size: 14px; 
+  font-weight: 600; 
+  color: var(--dark-pink); 
+  transition: 0.2s; 
+}
+.back-link:hover { 
+  color: var(--pink); 
+  transform: translateX(-3px); 
+}
